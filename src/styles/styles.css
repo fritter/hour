@@ -28,7 +28,7 @@ body {
     height: 80vh;
     width: 25%;
     box-shadow: 0 2rem 4rem var(--color-shadow);
-    background-color: var(--color-light-black);
+    background-color: var(--color-gray);
 }
 
 .result-screen {
@@ -62,12 +62,60 @@ body {
     height: 11vh;
     width: 100%;
     display: flex;
-    color: var(--color-white);
+    color: var(--color-light-white);
 }
 
 .keypad {
     height: 55vh;
     width: 100%;
+}
+
+.btn {
+    width: 25%;
+    height: 100%;
+    font-size: 3rem;
+    font-family: inherit;
+    color: var(--color-light-white);
+    background-color: var(--color-gray);
+    border: 1px solid transparent;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+}
+
+.btn:hover {
+    color: var(--color-black);
+    background-color: var(--color-orange);
+}
+
+.btn:active {
+    transform: scale(.95);
+}
+
+.btn--large1--operator {
+    width: 50%;
+    color: var(--color-light-white);
+    background-color: var(--color-gray);
+    transition: all .2s;
+}
+
+.btn--large1--operator:hover {
+    background-color: var(--color-orange);
+    color: var(--color-black);
+}
+
+.btn--large2 {
+    width: 50%;
+    color: var(--color-black);
+    background-color: var(--color-orange);
+    transition: all .2s;
+}
+
+.btn--large2:hover {
+    background-color: var(--color-gray);
+    color: var(--color-light-white);
 }
 
 :root {
@@ -82,4 +130,9 @@ body {
     --color-gray: #444444;
     
     --color-shadow: rgba(0, 0, 0, .4);
+}
+
+.btn--operator,
+.btn--large1--operator {
+    color: var(--color-orange);
 }
